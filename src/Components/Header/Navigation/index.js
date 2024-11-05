@@ -3,16 +3,20 @@ import { IoIosMenu } from "react-icons/io";
 import { FaAngleDown } from "react-icons/fa6";
 import { Link } from "react-router-dom";
 import { useState } from "react";
+import { FaAngleRight } from "react-icons/fa6";
 
 const Navigation = () => {
-  const [isopenSidebarVal, setisopenSidebarVal] = useState(false)
+  const [isopenSidebarVal, setisopenSidebarVal] = useState(false);
   return (
     <nav>
       <div className="container">
         <div className="row">
           <div className="col-sm-2 navPart1">
             <div className="catWrapper">
-              <Button className="allCatTab align-items-center" onClick={()=>setisopenSidebarVal(!isopenSidebarVal)}>
+              <Button
+                className="allCatTab align-items-center"
+                onClick={() => setisopenSidebarVal(!isopenSidebarVal)}
+              >
                 <span className="icon1 mr-2">
                   <IoIosMenu />
                 </span>
@@ -21,17 +25,61 @@ const Navigation = () => {
                   <FaAngleDown />
                 </span>
               </Button>
-              <div className={`sidebarNav ${isopenSidebarVal===true ? 'open' : ''}`}>
+              <div
+                className={`sidebarNav ${
+                  isopenSidebarVal === true ? "open" : ""
+                }`}
+              >
                 <ul>
                   <li>
                     <Link to="/">
-                      <Button>Hombres</Button>
+                      <Button>Hombres <FaAngleRight className="ml-auto" /></Button>
                     </Link>
+                    <div className="submenu">
+                      <Link to="/">
+                        <Button>Ropa</Button>
+                      </Link>
+                      <Link to="/">
+                        <Button>Calzado</Button>
+                      </Link>
+                      <Link to="/">
+                        <Button>Relojes</Button>
+                      </Link>
+                      <Link to="/">
+                        <Button>Ropa</Button>
+                      </Link>
+                      <Link to="/">
+                        <Button>Calzado</Button>
+                      </Link>
+                      <Link to="/">
+                        <Button>Relojes</Button>
+                      </Link>
+                    </div>
                   </li>
                   <li>
                     <Link to="/">
-                      <Button>Mujeres</Button>
+                      <Button>Mujeres <FaAngleRight className="ml-auto" /></Button>
                     </Link>
+                    <div className="submenu">
+                      <Link to="/">
+                        <Button>Ropa</Button>
+                      </Link>
+                      <Link to="/">
+                        <Button>Calzado</Button>
+                      </Link>
+                      <Link to="/">
+                        <Button>Relojes</Button>
+                      </Link>
+                      <Link to="/">
+                        <Button>Ropa</Button>
+                      </Link>
+                      <Link to="/">
+                        <Button>Calzado</Button>
+                      </Link>
+                      <Link to="/">
+                        <Button>Relojes</Button>
+                      </Link>
+                    </div>
                   </li>
                   <li>
                     <Link to="/">
