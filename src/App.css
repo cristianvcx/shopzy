@@ -442,6 +442,39 @@ nav .navPart2 ul li:hover .submenu {
   font-size:16px;
   font-weight: bold;
 }
+.productItem .actions{
+  position:absolute;
+  top:20px;
+  right:10px;
+  z-index:1000;
+  display:flex;
+  flex-direction:column;
+  gap:10px;
+}
+.productItem .actions button{
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  min-width:40px !important;
+  height:40px !important;
+  width:40px !important;
+  border:1px solid rgba(0,0,0,0.1) !important;
+  border-radius:50% !important;
+  background:#fff !important;
+  box-shadow:0 1px 3px rgb(0 0 0 / 12%), 0 1px 2px rgb(0 0 0 / 24%) !important;
+}
+.productItem .actions button svg{
+  color:#000 !important;
+  opacity:0.8;
+  pointer-events: none;
+  font-size:15px !important;
+}
+.productItem .actions button:hover{
+  background:#233a95 !important;
+}
+.productItem .actions button:hover svg{
+  color:#fff !important;
+}
 .product_row .productItem{
   border-right:1px solid transparent !important;
 }

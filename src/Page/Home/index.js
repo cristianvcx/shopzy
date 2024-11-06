@@ -7,7 +7,8 @@ import { IoIosArrowRoundForward } from "react-icons/io";
 import "swiper/css";
 import "swiper/css/navigation";
 import { Navigation } from "swiper/modules";
-import Rating from "@mui/material/Rating";
+
+import ProductItem from "../../Components/ProductItem";
 
 const Home = () => {
   var productSliderOptions = {
@@ -51,161 +52,22 @@ const Home = () => {
                   className="mySwiper"
                 >
                   <SwiperSlide>
-                    <div className="item productItem">
-                      <div className="imgWrapper">
-                        <img
-                          src="https://klbtheme.com/bacola/wp-content/uploads/2021/04/product-image-3-346x310.jpg"
-                          className="w-100"
-                        />
-                        <span className="badge badge-primary">28%</span>
-                      </div>
-                      <div className="info">
-                        <h4>Caramelo originales de Werther</h4>
-                        <span className="text-success d-block">En Stock</span>
-                        <Rating
-                          className="mt-2 mb-2"
-                          name="read-only"
-                          value={5}
-                          readOnly
-                          size="small"
-                          precision={0.5}
-                        />
-                        <div className="d-flex">
-                          <span className="oldPrice">$20.00</span>
-                          <span className="netPrice text-danger ml-2">$14.00</span>
-                        </div>
-                      </div>
-                    </div>
+                    <ProductItem />
                   </SwiperSlide>
                   <SwiperSlide>
-                    <div className="item productItem">
-                      <div className="imgWrapper">
-                        <img
-                          src="https://klbtheme.com/bacola/wp-content/uploads/2021/04/product-image-3-346x310.jpg"
-                          className="w-100"
-                        />
-                      </div>
-                      <div className="info">
-                        <h4>Caramelo originales de Werther</h4>
-                        <span className="text-success d-block">En Stock</span>
-                        <Rating
-                          className="mt-2 mb-2"
-                          name="read-only"
-                          value={5}
-                          readOnly
-                          size="small"
-                          precision={0.5}
-                        />
-                        <div className="d-flex">
-                          <span className="oldPrice">$20.00</span>
-                          <span className="netPrice text-danger ml-2">$14.00</span>
-                        </div>
-                      </div>
-                    </div>
+                    <ProductItem />
                   </SwiperSlide>
                   <SwiperSlide>
-                    <div className="item productItem">
-                      <div className="imgWrapper">
-                        <img
-                          src="https://klbtheme.com/bacola/wp-content/uploads/2021/04/product-image-3-346x310.jpg"
-                          className="w-100"
-                        />
-                      </div>
-                      <div className="info">
-                        <h4>Caramelo originales de Werther</h4>
-                        <span className="text-success d-block">En Stock</span>
-                        <Rating
-                          className="mt-2 mb-2"
-                          name="read-only"
-                          value={5}
-                          readOnly
-                          size="small"
-                          precision={0.5}
-                        />
-                        <div className="d-flex">
-                          <span className="oldPrice">$20.00</span>
-                          <span className="netPrice text-danger ml-2">$14.00</span>
-                        </div>
-                      </div>
-                    </div>
+                    <ProductItem />
                   </SwiperSlide>
                   <SwiperSlide>
-                    <div className="item productItem">
-                      <div className="imgWrapper">
-                        <img
-                          src="https://klbtheme.com/bacola/wp-content/uploads/2021/04/product-image-3-346x310.jpg"
-                          className="w-100"
-                        />
-                      </div>
-                      <div className="info">
-                        <h4>Caramelo originales de Werther</h4>
-                        <span className="text-success d-block">En Stock</span>
-                        <Rating
-                          className="mt-2 mb-2"
-                          name="read-only"
-                          value={5}
-                          readOnly
-                          size="small"
-                          precision={0.5}
-                        />
-                        <div className="d-flex">
-                          <span className="oldPrice">$20.00</span>
-                          <span className="netPrice text-danger ml-2">$14.00</span>
-                        </div>
-                      </div>
-                    </div>
+                    <ProductItem />
                   </SwiperSlide>
                   <SwiperSlide>
-                    <div className="item productItem">
-                      <div className="imgWrapper">
-                        <img
-                          src="https://klbtheme.com/bacola/wp-content/uploads/2021/04/product-image-3-346x310.jpg"
-                          className="w-100"
-                        />
-                      </div>
-                      <div className="info">
-                        <h4>Caramelo originales de Werther</h4>
-                        <span className="text-success d-block">En Stock</span>
-                        <Rating
-                          className="mt-2 mb-2"
-                          name="read-only"
-                          value={5}
-                          readOnly
-                          size="small"
-                          precision={0.5}
-                        />
-                        <div className="d-flex">
-                          <span className="oldPrice">$20.00</span>
-                          <span className="netPrice text-danger ml-2">$14.00</span>
-                        </div>
-                      </div>
-                    </div>
+                    <ProductItem />
                   </SwiperSlide>
                   <SwiperSlide>
-                    <div className="item productItem">
-                      <div className="imgWrapper">
-                        <img
-                          src="https://klbtheme.com/bacola/wp-content/uploads/2021/04/product-image-3-346x310.jpg"
-                          className="w-100"
-                        />
-                      </div>
-                      <div className="info">
-                        <h4>Caramelo originales de Werther</h4>
-                        <span className="text-success d-block">En Stock</span>
-                        <Rating
-                          className="mt-2 mb-2"
-                          name="read-only"
-                          value={5}
-                          readOnly
-                          size="small"
-                          precision={0.5}
-                        />
-                        <div className="d-flex">
-                          <span className="oldPrice">$20.00</span>
-                          <span className="netPrice text-danger ml-2">$14.00</span>
-                        </div>
-                      </div>
-                    </div>
+                    <ProductItem />
                   </SwiperSlide>
                 </Swiper>
               </div>
