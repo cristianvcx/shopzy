@@ -3,12 +3,14 @@ import { Swiper, SwiperSlide } from "swiper/react";
 import { Button } from "@mui/material";
 import HomerBanner from "../../Components/HomeBanner";
 import banner1 from "../../assets/images/banner1.jpg";
+import banner2 from "../../assets/images/banner2.jpg";
 import { IoIosArrowRoundForward } from "react-icons/io";
 import "swiper/css";
 import "swiper/css/navigation";
 import { Navigation } from "swiper/modules";
 
 import ProductItem from "../../Components/ProductItem";
+import HomeCat from "../../Components/HomeCat";
 
 const Home = () => {
   var productSliderOptions = {
@@ -21,12 +23,18 @@ const Home = () => {
   return (
     <>
       <HomerBanner />
+      <HomeCat/>
+
       <section className="homeProducts">
         <div className="container">
           <div className="row">
             <div className="col-md-3">
               <div className="banner">
                 <img src={banner1} className="cursor w-100" />
+              </div>
+
+              <div className="banner mt-4">
+                <img src={banner2} className="cursor w-100" />
               </div>
             </div>
             <div className="col-md-9 productRow">
