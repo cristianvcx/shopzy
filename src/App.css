@@ -579,3 +579,8 @@ nav .navPart2 ul li:hover .submenu {
 .bannerSec{
   gap:15px;
 }
+.sticky{
+  position:sticky;
+  top:10px;
+  z-index:100;
+}

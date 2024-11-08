@@ -31,12 +31,14 @@ const Home = () => {
         <div className="container">
           <div className="row">
             <div className="col-md-3">
-              <div className="banner">
-                <img src={banner1} className="cursor w-100" />
-              </div>
+              <div className="sticky">
+                <div className="banner">
+                  <img src={banner1} className="cursor w-100" />
+                </div>
 
-              <div className="banner mt-4">
-                <img src={banner2} className="cursor w-100" />
+                <div className="banner mt-4">
+                  <img src={banner2} className="cursor w-100" />
+                </div>
               </div>
             </div>
             <div className="col-md-9 productRow">
