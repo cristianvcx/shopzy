@@ -13,24 +13,17 @@ const ProductItem = () => {
         />
         <span className="badge badge-primary">28%</span>
         <div className="actions">
-          <Button><TfiFullscreen/></Button>
-          <Button><IoMdHeartEmpty style={{fontSize:"20px"}}/></Button>
+          <Button><TfiFullscreen /></Button>
+          <Button><IoMdHeartEmpty style={{fontSize:'20px'}} /></Button>
         </div>
       </div>
       <div className="info">
-        <h4>Caramelo originales de Werther</h4>
-        <span className="text-success d-block">En Stock</span>
-        <Rating
-          className="mt-2 mb-2"
-          name="read-only"
-          value={5}
-          readOnly
-          size="small"
-          precision={0.5}
-        />
+        <h4>Werther's Original Caramel Hard Candies</h4>
+        <span className="text-success d-block">In Stock</span>
+        <Rating className="mt-2 mb-2" name="read-only" value={5} readOnly />
         <div className="d-flex">
           <span className="oldPrice">$20.00</span>
-          <span className="netPrice text-danger ml-2">$14.00</span>
+          <span className="netPrice text-danger ml-3">$14.00</span>
         </div>
       </div>
     </div>

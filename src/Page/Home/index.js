@@ -11,6 +11,8 @@ import { Navigation } from "swiper/modules";
 
 import ProductItem from "../../Components/ProductItem";
 import HomeCat from "../../Components/HomeCat";
+import banner3 from "../../assets/images/banner3.jpg";
+import banner4 from "../../assets/images/banner4.jpg";
 
 const Home = () => {
   var productSliderOptions = {
@@ -23,7 +25,7 @@ const Home = () => {
   return (
     <>
       <HomerBanner />
-      <HomeCat/>
+      <HomeCat />
 
       <section className="homeProducts">
         <div className="container">
@@ -53,10 +55,9 @@ const Home = () => {
                 <Swiper
                   slidesPerView={4}
                   spaceBetween={0}
-                  pagination={{
-                    clickable: true,
-                  }}
-                  modules={Navigation}
+                  navigation={true}
+                  slidesPerGroup={3}
+                  modules={[Navigation]}
                   className="mySwiper"
                 >
                   <SwiperSlide>
@@ -91,35 +92,23 @@ const Home = () => {
                   Ver Todo <IoIosArrowRoundForward />
                 </Button>
               </div>
-              <div className="product_row w-100 mt-4">
-                <Swiper
-                  slidesPerView={4}
-                  spaceBetween={0}
-                  pagination={{
-                    clickable: true,
-                  }}
-                  modules={Navigation}
-                  className="mySwiper"
-                >
-                  <SwiperSlide>
-                    <ProductItem />
-                  </SwiperSlide>
-                  <SwiperSlide>
-                    <ProductItem />
-                  </SwiperSlide>
-                  <SwiperSlide>
-                    <ProductItem />
-                  </SwiperSlide>
-                  <SwiperSlide>
-                    <ProductItem />
-                  </SwiperSlide>
-                  <SwiperSlide>
-                    <ProductItem />
-                  </SwiperSlide>
-                  <SwiperSlide>
-                    <ProductItem />
-                  </SwiperSlide>
-                </Swiper>
+              <div className="product_row productRow2 w-100 mt-4 d-flex">
+                <ProductItem />
+                <ProductItem />
+                <ProductItem />
+                <ProductItem />
+                <ProductItem />
+                <ProductItem />
+                <ProductItem />
+                <ProductItem />
+              </div>
+              <div className="d-flex mt-4 mb-5 bannerSec">
+                <div className="banner">
+                  <img src={banner3} className="cursor" />
+                </div>
+                <div className="banner">
+                  <img src={banner4} className="cursor" />
+                </div>
               </div>
             </div>
           </div>

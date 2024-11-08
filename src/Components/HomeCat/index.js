@@ -28,9 +28,10 @@ const HomeCat = () => {
   return (
     <section className="homeCat">
       <div className="container">
+        <h3 className="mb-3 hd">Características Categorías</h3>
         <Swiper
           slidesPerView={10}
-          spaceBetween={8}
+          spaceBetween={3}
           navigation={true}
           slidesPerGroup={3}
           modules={[Navigation]}
@@ -39,7 +40,10 @@ const HomeCat = () => {
           {itemBg?.map((item, index) => {
             return (
               <SwiperSlide>
-                <div className="item text-center" style={{background:item}}>
+                <div
+                  className="item text-center cursor"
+                  style={{ background: item }}
+                >
                   <img src="https://wp.alithemes.com/html/nest/demo/assets/imgs/shop/cat-9.png" />
                   <h6>Manzana</h6>
                 </div>
