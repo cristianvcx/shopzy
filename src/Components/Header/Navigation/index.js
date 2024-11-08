@@ -114,7 +114,7 @@ const Navigation = () => {
               </li>
               <li className="list-inline-item">
                 <Link to="/">
-                  <Button>Hombres</Button>
+                  <Button>Tiendas</Button>
                 </Link>
                 <div className="submenu shadow">
                   <Link to="/">
@@ -139,7 +139,7 @@ const Navigation = () => {
               </li>
               <li className="list-inline-item">
                 <Link to="/">
-                  <Button>Mujeres</Button>
+                  <Button>Carnes & Mariscos</Button>
                 </Link>
                 <div className="submenu shadow">
                   <Link to="/">
@@ -155,7 +155,7 @@ const Navigation = () => {
               </li>
               <li className="list-inline-item">
                 <Link to="/">
-                  <Button>Bellezas</Button>
+                  <Button>Panaderia</Button>
                 </Link>
                 <div className="submenu shadow">
                   <Link to="/">
@@ -171,7 +171,7 @@ const Navigation = () => {
               </li>
               <li className="list-inline-item">
                 <Link to="/">
-                  <Button>Relojes</Button>
+                  <Button>Bebidas</Button>
                 </Link>
                 <div className="submenu shadow">
                   <Link to="/">
@@ -184,27 +184,6 @@ const Navigation = () => {
                     <Button>Relojes</Button>
                   </Link>
                 </div>
-              </li>
-              <li className="list-inline-item">
-                <Link to="/">
-                  <Button>Niños</Button>
-                </Link>
-                <div className="submenu shadow">
-                  <Link to="/">
-                    <Button>Ropa</Button>
-                  </Link>
-                  <Link to="/">
-                    <Button>Calzado</Button>
-                  </Link>
-                  <Link to="/">
-                    <Button>Relojes</Button>
-                  </Link>
-                </div>
-              </li>
-              <li className="list-inline-item">
-                <Link to="/">
-                  <Button>Regalos</Button>
-                </Link>
               </li>
               <li className="list-inline-item">
                 <Link to="/">

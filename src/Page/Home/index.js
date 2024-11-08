@@ -13,6 +13,8 @@ import ProductItem from "../../Components/ProductItem";
 import HomeCat from "../../Components/HomeCat";
 import banner3 from "../../assets/images/banner3.jpg";
 import banner4 from "../../assets/images/banner4.jpg";
+import newLetterImg from "../../assets/images/coupon.png";
+import { IoMailOutline } from "react-icons/io5";
 
 const Home = () => {
   var productSliderOptions = {
@@ -116,6 +118,28 @@ const Home = () => {
           </div>
         </div>
       </section>
+
+      <section className="newsLetterSection mt-3 mb-3 d-flex align-items-center">
+        <div className="container">
+          <div className="row">
+            <div className="col-md-6">
+              <p className="text-white mb-1">$20 de descuento para tu primer pedido</p>
+              <h3 className="text-white">Únete a nuestra newsletter y recibe...</h3>
+              <p className="text-light">Únase a nuestra suscripción por correo electrónico ahora para recibir actualizaciones <br/>sobre promociones y cupones.</p>
+              <form>
+                <IoMailOutline/>
+                <input type="text" placeholder="Su dirección de correo electrónico"/>
+                <Button>Suscribir</Button>
+              </form>
+            </div>
+            <div className="col-md-6">
+              <img src={newLetterImg}/>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <br/><br/><br/><br/><br/><br/>
     </>
   );
 };
