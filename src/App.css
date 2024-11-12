@@ -36,9 +36,10 @@ body {
   color:#fff !important;
   text-transform: capitalize !important;
 }
-.bg-big{
-  font-size:17px !important;
-  padding:10px 30px !important;
+.btn-big{
+  font-size:15px !important;
+  padding:7px 30px !important;
+  min-width: auto !important;
 }
 .btn-round{
   border-radius:30px !important;
@@ -788,4 +789,27 @@ footer .copyright ul li a:hover svg {
 }
 .zoomSlider .slick-arrow.slick-prev{
   left:-5% !important;
+}
+.quantityDrop{
+  width:150px;
+  gap:10px;
+}
+.quantityDrop button{
+  min-width:40px !important;
+  width:40px !important;
+  height:40px !important;
+  border-radius:50% !important;
+  background:#edeef5 !important;
+  border:1px solid rgba(0,0,0,0.1) !important;
+  color:#000;
+}
+.quantityDrop button svg{
+  color:#000 !important;
+}
+.quantityDrop input{
+  width:30px;
+  border:0px;
+  background:transparent;
+  outline:none !important;
+  text-align:center;
 }

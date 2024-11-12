@@ -5,6 +5,7 @@ import Slider from "react-slick";
 import { useRef } from "react";
 import InnerImageZoom from "react-inner-image-zoom";
 import "react-inner-image-zoom/lib/InnerImageZoom/styles.css";
+import QuantityBox from "../QuantityBox";
 
 const ProductModal = (props) => {
   const zoomSliderBig = useRef();
@@ -130,8 +131,9 @@ const ProductModal = (props) => {
               torquent
             </p>
             <div className="d-flex align-items-center">
-              <div className="quantityDrop d-flex align-items-center"></div>
-              <Button className="btn-blue btn-lg btn-big btn-round">Añadir al Carrito</Button>
+              <QuantityBox/>
+              
+              <Button className="btn-blue btn-lg btn-big btn-round ml-3">Añadir al Carrito</Button>
             </div>
           </div>
         </div>
