@@ -6,6 +6,8 @@ import { useRef } from "react";
 import InnerImageZoom from "react-inner-image-zoom";
 import "react-inner-image-zoom/lib/InnerImageZoom/styles.css";
 import QuantityBox from "../QuantityBox";
+import { IoIosHeartEmpty } from "react-icons/io";
+import { MdOutlineCompareArrows } from "react-icons/md";
 
 const ProductModal = (props) => {
   const zoomSliderBig = useRef();
@@ -66,7 +68,8 @@ const ProductModal = (props) => {
         <hr />
         <div className="row mt-2 productDetaileModal">
           <div className="col-md-5">
-            <div className="productZoom">
+            <div className="productZoom position-relative">
+              <div className="badge badge-primary">23%</div>
               <Slider
                 {...settings2}
                 className="zoomSliderBig"
@@ -131,9 +134,19 @@ const ProductModal = (props) => {
               torquent
             </p>
             <div className="d-flex align-items-center">
-              <QuantityBox/>
-              
-              <Button className="btn-blue btn-lg btn-big btn-round ml-3">Añadir al Carrito</Button>
+              <QuantityBox />
+
+              <Button className="btn-blue btn-lg btn-big btn-round ml-3">
+                Añadir al Carrito
+              </Button>
+            </div>
+            <div className="d-flex align-items-center mt-5 actions">
+              <Button className="btn-round btn-sml" variant="outlined">
+                <IoIosHeartEmpty /> &nbsp; Añadir a la lista de deseos
+              </Button>
+              <Button className="btn-round btn-sml ml-3" variant="outlined">
+                <MdOutlineCompareArrows /> &nbsp; Comparar
+              </Button>
             </div>
           </div>
         </div>
